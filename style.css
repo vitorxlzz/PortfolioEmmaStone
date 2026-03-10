@@ -1,0 +1,21 @@
+.btn-link {
+  display: inline-block;   
+  margin-top: 10px;        
+  padding: 10px 20px;       
+  background-color: white; 
+  color: #d63384;            
+  border: 2px solid #d63384; 
+  border-radius: 25px;      
+  text-decoration: none;    
+  font-weight: bold;
+  transition: 0.3s;          
+  cursor: pointer;
+}
+
+
+.btn-link:hover {
+  background-color: #d63384; 
+  color: white;             
+  transform: scale(1.05);    
+  box-shadow: 0 5px 15px rgba(214, 51, 132, 0.3); 
+}

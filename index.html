@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Emma Stone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ff6b6b;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #222;
+            border-bottom: 3px solid #ff6b6b;
+            padding-bottom: 10px;
+        }
+
+        .sobre-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .sobre-content img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        .sobre-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .filmografia-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .filme {
+            border: 5px solid #bebebe;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .filme img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .filme h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .filme p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+
+
+        .contato-form {
+            max-width: 600px;
+        }
+
+        .contato-form input,
+        .contato-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+
+        .contato-form button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contato-form button:hover {
+            background-color: #ee5a6f;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+
+            .filmografia-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        .sobre-content {
+            display: flex;
+  align-items: center; 
+  gap: 20px;           
+  text-align: left;   
+}
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Emma Stone</h1>
+        <p>Atriz de Cinema</p>
+    </header>
+
+    <nav>
+        <a href="#Sobre">Sobre</a>
+        <a href="#Filmes">Filmes</a>
+        <a href="#Contato">Contato</a>
+    </nav>
+
+    <section id="Sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-content">
+            <img src="images/EmmaSobre.webp"
+                alt="Emma Stone">
+            <div class="sobre-text">
+                <p>Contadora de histórias por vocação. Entre personagens e produções, sigo acreditando que a
+                    autenticidade é o melhor roteiro.</p>
+                <p>Atriz dedicada a explorar a complexidade humana através da performance. Com um pé no drama e outro na
+                    comédia, busco projetos que desafiem a perspectiva e celebrem a vulnerabilidade. Atuando, produzindo
+                    e sempre aprendendo.</p>
+                <p><strong>Localização:</strong> Nova York (NYC)</p>
+                <p><strong>Experiência:</strong> 20/+ anos</p>
+                <p style="margin:0;"><a href="galeria.html" class="btn-link">Minha Galeria</a></p>
+                <p style="margin:0;"><a href="biografia.html" class="btn-link">Minha Biografia</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Filmes">
+        <h2>Principais Filmes</h2>
+        <div class="filmografia-grid">
+            <div class="filme">
+                <img src="images/Lalaland.jpg" alt="Filme 1">
+                <h3>La La Land</h3>
+                <p>A Dualidade entre Romance e Carreira</p>
+                <p><strong>Ano:</strong> 2016</p>
+            </div>
+            <div class="filme">
+                <img src="images/Cruella1.webp" alt="Cruella">
+                <h3>Cruella</h3>
+                <p>Origem da vilã e o surgimento de Estella</p>
+                <p><strong>Ano:</strong> 2021</p>
+            </div>
+            <div class="filme">
+                <img src="images/EmmaPoor1.avif" alt="Pobres Criaturas">
+                <h3>Pobres Criaturas</h3>
+                <p>A Frankenstein em busca de si</p>
+                <p><strong>Ano:</strong> 2022</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Contato">
+        <h2>Entre em Contato</h2>
+        <form class="contato-form">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026, Emma Stone. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

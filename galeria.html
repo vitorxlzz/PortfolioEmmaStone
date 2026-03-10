@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: white;">Galeria da Emma Stone</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('images/BackgroundGaleria.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .galeria-item {
+            border: 1px solid #ddd;
+            padding: 0;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .galeria-item p {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .galeria-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .p {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha Galeria de Imagens 📸</h1>
+    <div class="galeria-grid">
+        <div class="galeria-item">
+            <img src="images/Emma 1.jpeg" alt="Foto 1">
+            <p>Emma 1</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Emma 2.jpeg" alt="Foto 2">
+            <p>Oscar Night</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Emma 3.jpeg" alt="Foto 3">
+            <p>Emma 2</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Abigail.jpeg" alt="Foto 4">
+            <p>Abigail Mashan</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Mia.jpeg" alt="Foto 5">
+            <p>Mia Dolan</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Gwen.jpeg" alt="Foto 6">
+            <p>Gwen Stacy</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/Cruella2.jpeg" alt="Foto 7">
+            <p>The Cruella</p>
+        </div>
+        <div class="galeria-item">
+            <img src="images/EmmaPoor2.jpeg" alt="Foto 8">
+            <p>Bella Baxter</p>
+        </div>
+    
+        </div>
+    </div>
+</body>
+</html>
